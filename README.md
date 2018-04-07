@@ -12,6 +12,7 @@
 
 #### 二、红黑树数据结构定义<br>
 	 
+	<!--lang: cpp--> 
 	enum Color  
 	{  
 	      RED = 0,  
