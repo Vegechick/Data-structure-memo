@@ -12,20 +12,21 @@
 
 #### 二、红黑树数据结构定义<br>
 	 
-	<!--lang: java--> 
-	enum Color  
-	{  
-	      RED = 0,  
-	      BLACK = 1  
-	};  
-	  
-	struct RBTreeNode  
-	{  
-	       struct RBTreeNode*left, *right, *parent;  
-	       int   key;  
-	       int data;  
-	       Color color;  
-	};  
+```cpp
+enum Color  
+{  
+      RED = 0,  
+      BLACK = 1  
+};  
+
+struct RBTreeNode  
+{  
+       struct RBTreeNode*left, *right, *parent;  
+       int   key;  
+       int data;  
+       Color color;  
+};
+```
 
 #### 三、旋转 <br>
 <font face="menlo"> 1.出现红色左或右链接 2.两条连续的红链接 </font><br>
