@@ -31,7 +31,7 @@ struct RBTreeNode
 #### 三、旋转 <br>
 <font face="menlo"> 1.出现红色左或右链接 2.两条连续的红链接 </font><br>
 ##### 1. 左旋
-![Alt text](left.jpg)
+![Alt text](left.jpeg)
 
 ```cpp
 node rotateLeft(node h){
