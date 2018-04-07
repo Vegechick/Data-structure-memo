@@ -1,6 +1,5 @@
-# Data-structure-memo
 
-# 数据结构算法
+#数据结构算法
 
 ## 红黑树
 
@@ -27,8 +26,32 @@
 	       Color color;  
 	};  
 
-#### 三、左旋 <br>
-<font face="menlo"> 1.出现红色右链接 2.两条连续的红链接 </font><br>
+#### 三、旋转 <br>
+<font face="menlo"> 1.出现红色左或右链接 2.两条连续的红链接 </font><br>
+##### 1. 左旋
 ![Alt text](left.jpg)
 
-#### 四、右旋
+    node rotateLeft(node h){
+        node x = h->right;
+        h->right = x->left;
+        x->left = h;
+        x->color = h->color;
+        h->color = RED;
+        x->N = h->N;
+        h->N = 1 + size(h->left) + size(h->right);
+        return x;
+    }
+<br>
+##### 2. 右旋
+![Alt text](right.jpg)
+
+    node rotateRight(node h){
+        node x = h->left;
+        h->left = x->right;
+        x->right = h;
+        x->color = h->color;
+        h->color = RED;
+        x->N = h->N;
+        h->N = 1 + size(h->left) + size(h->right);
+        return x;
+    }
