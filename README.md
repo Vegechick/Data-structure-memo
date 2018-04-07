@@ -41,7 +41,8 @@
         h->N = 1 + size(h->left) + size(h->right);
         return x;
     }
-<br>
+
+
 ##### 2. 右旋
 ![Alt text](right.jpg)
 
